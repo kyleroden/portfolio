@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 /*mobile & default styles */
 
 #headline {
@@ -27,35 +26,52 @@
   justify-content: flex-end;
   z-index: 999;
 }
-.nav li {
-  background-color: rgba( 111, 111, 111, .1);
-  display: inline-block;
+
+#about-section {
+  margin-top: 48px;
 }
 
-/* bigger than mobile styles */
+#portfolio-section {
+  margin-top: 10vh;
+}
+
+#contact-section {
+  margin-top: 10vh;
+
+}
+
+.nav li{
+  background-color: rgba( 111,111,111,.1);
+  display: inline-block;
+}
+/* tablet, desktop, etc styles */
 
 @media all and (min-width: 400px) {
-  .site-card {
-    min-height: 100%;
-    max-width: 280px;
-    max-height: 280px;
-    background-color: rgba(255, 112, 113, .3);
-    min-width: 100%;
-    display: absolute;
-  }
-  .site {
-    display: inline-block;
-    padding: 8px;
-    margin: 0 1em;
-    background-color: rgba( 111, 111, 111, .1);
-    min-height: 100%;
-    max-width: 300px;
-    max-height: 350px;
-    display: relative;
-  }
-  #site-wrapper {
-    height: 100%;
-    max-width: 95%;
-    margin: 0 auto;
-  }
+
+.site-card {
+  min-height: 100%;
+  max-width: 280px;
+  max-height: 280px;
+  background-color: rgba(255, 112, 113, .3);
+  min-width: 100%;
+  display: absolute;
+}
+
+.site {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 1em;
+  background-color: rgba( 111,111,111,.1);
+  min-height: 100%;
+  max-width: 300px;
+  max-height: 350px;
+  display: relative;
+}
+
+.section-wrapper {
+  height: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 }
