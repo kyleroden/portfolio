@@ -4,7 +4,6 @@
 /*mobile & default styles */
 
 #headline {
-  margin-top: 54px;
   font-weight: 700;
 }
 #header-text {
@@ -28,7 +27,7 @@
 }
 
 #about-section {
-  margin-top: 48px;
+  margin-top: 4em;
 }
 
 #portfolio-section {
@@ -68,10 +67,10 @@
   display: relative;
 }
 
-.section-wrapper {
+/*.section-wrapper {
   height: 100%;
   max-width: 95%;
   margin: 0 auto;
-}
+}*/
 
 }
