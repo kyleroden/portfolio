@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+#site_wrapper {
+  margin-top: 4em;
+}
 /*mobile & default styles */
 
 #headline {
@@ -19,34 +22,37 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #D1D1D1;
+  background-color: #748EB2;
   min-width: 100%;
   display: flex;
   justify-content: flex-end;
   z-index: 999;
+  color: white;
 }
-
-#about-section {
-  margin-top: 4em;
+#nav-container a {
+  color: white;
 }
-
-#portfolio-section {
-  margin-top: 10vh;
+#nav-container a:hover {
+  color: #314765;
 }
-
-#contact-section {
-  margin-top: 10vh;
-
-}
-
 .nav li{
   background-color: rgba( 111,111,111,.1);
   display: inline-block;
 }
+#card_wrapper {
+  display: flex;
+  justify-content: center;
+}
 /* tablet, desktop, etc styles */
-
+/*@media all and (min-width: 1100px) {
+  #portfolio-section {
+    float: right;
+  }
+}*/
 @media all and (min-width: 400px) {
-
+#portfolio-section {
+  /*float: right;*/
+}
 .site-card {
   min-height: 100%;
   max-width: 280px;
@@ -58,19 +64,26 @@
 
 .site {
   display: inline-block;
-  padding: 8px;
-  margin: 0 1em;
+  padding: 20px;
+  margin: 0 .8em;
   background-color: rgba( 111,111,111,.1);
   min-height: 100%;
   max-width: 300px;
   max-height: 350px;
-  display: relative;
 }
-
-/*.section-wrapper {
+#site_one {
+  background-color: #FFFBFB;
+}
+#site_two {
+  background-color: #D0E3FF;
+}
+#site_three {
+  background-color: #C4CCA9;
+}
+.section-wrapper {
   height: 100%;
-  max-width: 95%;
+  margin-top: 4em;
   margin: 0 auto;
-}*/
+}
 
 }
