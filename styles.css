@@ -1,9 +1,15 @@
-
 * {
   box-sizing: border-box;
 }
+a, p, h1, h2, h3, h4, h5 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h5 {
+  font-size: 1.7em;
+}
 #site_wrapper {
   margin-top: 4em;
+  padding: 0 7px;
 }
 /*mobile & default styles */
 
@@ -35,96 +41,20 @@
   background-color: rgba( 111,111,111,.1);
   display: inline-block;
 }
-.card_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-/* tablet, desktop, etc styles */
-/*@media all and (min-width: 1100px) {
-  #portfolio-section {
-    float: right;
-  }
-}*/
-@media all and (min-width: 400px) {
-#portfolio-section {
-  /*float: right;*/
-}
-.site-card {
-  min-height: 100%;
-  max-width: 280px;
-  max-height: 280px;
-  background-color: rgba(255, 112, 113, .3);
-  min-width: 100%;
-  display: absolute;
-}
-
-.site {
-  display: inline-block;
-  padding: 20px;
-  margin: 0 2px;
-  background-color: rgba( 111,111,111,.1);
-  min-height: 100%;
-  max-width: 300px;
-  max-height: 350px;
-}
-#site_one {
-  background-color: #FFFBFB;
-}
-#site_two {
-  background-color: #D0E3FF;
-}
-#site_three {
-  background-color: #C4CCA9;
+#about_section p, a {
+  font-size: 1.3em;
 }
 .section-wrapper {
   height: 100%;
   width: 100%;
-  margin-top: 4em;
-  margin: 0 auto;
+  margin: 1em auto;
 }
-
+.site p, a {
+  font-size: 1em;
 }
-=======
-* {
-  box-sizing: border-box;
-}
-#site_wrapper {
-  margin-top: 4em;
-}
-/*mobile & default styles */
-
-#headline {
-  font-weight: 700;
-}
-#header-text {
-  margin-left: 15px;
-  font-weight: 600;
-}
-#nav-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #748EB2;
-  min-width: 100%;
+.card_wrapper {
   display: flex;
-  justify-content: space-between;
-  z-index: 999;
-  color: white;
-}
-#nav-container a {
-  color: white;
-}
-#nav-container a:hover {
-  color: #314765;
-}
-.nav li{
-  background-color: rgba( 111,111,111,.1);
-  display: inline-block;
-}
-#card_wrapper {
-  display: flex;
-  justify-content: center;
+  justify-content: space-around;;
   flex-wrap: wrap;
 }
 /* tablet, desktop, etc styles */
@@ -138,22 +68,21 @@
   /*float: right;*/
 }
 .site-card {
-  min-height: 100%;
-  max-width: 280px;
-  max-height: 280px;
+  /*min-height: 100%;*/
+  max-width: 17em;
+  /*max-height: 280px;*/
+  max-height: 95%;
   background-color: rgba(255, 112, 113, .3);
-  min-width: 100%;
-  display: absolute;
 }
 
 .site {
   display: inline-block;
-  padding: 20px;
-  margin: 0 2px;
+  margin: 0 6px;
   background-color: rgba( 111,111,111,.1);
-  min-height: 100%;
-  max-width: 300px;
-  max-height: 350px;
+  flex-basis: 10em;
+}
+.site_description {
+
 }
 #site_one {
   background-color: #FFFBFB;
@@ -164,10 +93,6 @@
 #site_three {
   background-color: #C4CCA9;
 }
-.section-wrapper {
-  height: 100%;
-  margin-top: 4em;
-  margin: 0 auto;
-}
+
 
 }
