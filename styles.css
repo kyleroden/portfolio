@@ -52,10 +52,23 @@ h5 {
 .site p, a {
   font-size: 1em;
 }
+#portfolio-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolio_description {
+  
+}
 .card_wrapper {
   display: flex;
   justify-content: space-around;;
   flex-wrap: wrap;
+  max-width: 1100px;
+  align-self: center;
+}
+.description_text {
+  align-self: center;
 }
 .footer {
   background-color: #748EB2;
@@ -78,9 +91,7 @@ h5 {
   }
 }*/
 @media all and (min-width: 400px) {
-#portfolio-section {
-  /*float: right;*/
-}
+
 /*styles for the img screenshots of sites*/
 .site-card {
   /*min-height: 100%;*/
