@@ -5,13 +5,9 @@
 
   <head>
     <title>Portfolio - Kyle Roden</title>
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <!--custom css styles-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
   </head>
   <div id="nav-container">
     <h4 class="navbar-text" id="header-text">Kyle Roden</h4>
@@ -29,7 +25,7 @@
         <div class="well section-wrapper" id="about_section">
           <h1 class="text-center" id="headline">Hello!</h1>
           <p>I'm Kyle, and I'm a web developer. My recent work is on the right and my contact information is found above. I'm a recent MA graduate from Portland State University, and I'm now looking for work as a jr. web developer, web developer or web development
-            intern in Portland, Oregon. You want to hire me because I bring the 'soft skills' needed to work with clients, the hunger to do a lot of work, and the smarts to do it well.
+            intern in Portland, Oregon. <strong>You want to hire me</strong> because I bring the 'soft skills' needed to work with clients, the hunger to do a lot of work, and the smarts to do it well.
           </p>
           <p>Web-wise, I'm into a good font. I know HTML and CSS. I'm proficient in JavaScript and JQuery. I have coded with Python and I'm eager to try Python frameworks such as Djangjo / Flask. I'm interested in having contact with clients as I enjoy people!
           </p>
@@ -47,28 +43,28 @@
               <div class="site_description">
                 <p class="small">Uses <a href="http://openweathermap.org/api">openweather</a> API to display current weather forecast.</p>
               </div>
-              <a href="../weather_app" target="_blank"><img src="http://www.pcunw.com/sandbox/weather_app/weather_app_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../weather_app" target="_blank"><img src="weather_app_screenshot.png" class="site-card img-responsive"></a>
             </div>
             <div class="well site" id="site_two">
               <a href="../wiki_app" target="_blank"><h5>Wikipedia Viewer</h5></a>
               <div class="site_description">
                 <p class="small">Uses wiki media API to display wikipedia entries.</p>
               </div>
-              <a href="../wiki_app" target="_blank"><img src="http://www.pcunw.com/sandbox/wiki_app/wiki_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../wiki_app" target="_blank"><img src="wiki_screenshot.png" class="site-card img-responsive"></a>
             </div>
             <div class="well site" id="site_three">
               <a href="../prag_site" target="_blank"><h5>Pragmatics Materials</h5></a>
               <div class="site_description">
                 <p class="small">This is my MA TESOL project. Instructional materials for a theory of pragmatic politeness.</p>
               </div>
-              <a href="../prag_site"><img src="../prag_site/pragmatics_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../prag_site"><img src="pragmatics_screenshot.png" class="site-card img-responsive"></a>
             </div>
           </div>
         </div>
 
       </div>
       <div class="col-xs-12 col-md-8 col-md-offset-4">
-        <div class="well section-wrapper pull-right">
+        <div class="well section-wrapper pull-right" id="second_portfolio_section">
           <p class="text-center">Built with templates</p>
           <div class="card_wrapper">
             <div class="well site" id="site_four">
@@ -99,7 +95,23 @@
     </div>
 
   </div>
-
+  <!--load all css and font scripts without blocking rendering-->
+  <script>
+    var scripts_array = [
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+      "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
+      "styles.css",
+      "https://fonts.googleapis.com/css?family=Alegreya+Sans"
+    ];
+    for (var i = 0; i < scripts_array.length; i++) {
+      var resource = document.createElement('link');
+      resource.setAttribute("rel", "stylesheet");
+      resource.setAttribute("href", scripts_array[i]);
+      resource.setAttribute("type", "text/css");
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(resource);
+    }
+  </script>
 </body>
 
 </html>

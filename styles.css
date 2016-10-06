@@ -57,9 +57,7 @@ h5 {
   justify-content: center;
   flex-direction: column;
 }
-.portfolio_description {
-  
-}
+
 .card_wrapper {
   display: flex;
   justify-content: space-around;;
@@ -69,6 +67,9 @@ h5 {
 }
 .description_text {
   align-self: center;
+}
+#second_portfolio_section {
+  margin-bottom: 3.5em;
 }
 .footer {
   background-color: #748EB2;
