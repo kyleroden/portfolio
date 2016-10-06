@@ -57,6 +57,20 @@ h5 {
   justify-content: space-around;;
   flex-wrap: wrap;
 }
+.footer {
+  background-color: #748EB2;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px 15px;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.footer p {
+  align-self: flex-start;
+}
 /* tablet, desktop, etc styles */
 /*@media all and (min-width: 1100px) {
   #portfolio-section {
@@ -67,9 +81,10 @@ h5 {
 #portfolio-section {
   /*float: right;*/
 }
+/*styles for the img screenshots of sites*/
 .site-card {
   /*min-height: 100%;*/
-  max-width: 17em;
+  max-width: 100%;
   /*max-height: 280px;*/
   max-height: 95%;
   background-color: rgba(255, 112, 113, .3);
@@ -77,9 +92,9 @@ h5 {
 
 .site {
   display: inline-block;
-  margin: 0 6px;
+  /*margin: 0 6px;*/
   background-color: rgba( 111,111,111,.1);
-  flex-basis: 10em;
+  flex-basis: 17em;
 }
 .site_description {
 
