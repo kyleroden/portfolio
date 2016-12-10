@@ -25,9 +25,9 @@
         <div class="well section-wrapper" id="about_section">
           <h1 class="text-center" id="headline">Hello!</h1>
           <p>I'm Kyle, and I'm a web developer. My recent work is on the right and my contact information is found above. I'm a recent MA graduate from Portland State University, and I'm now looking for work as a jr. web developer, web developer or web development
-            intern in Portland, Oregon. <strong>You want to hire me</strong> because I bring the 'soft skills' needed to work with clients, the hunger to do a lot of work, and the smarts to do it well.
+            intern in Portland, Oregon. <span id="extra_strong_text">You want to hire me</span> because I bring the 'soft skills' needed to work with clients, the hunger to do a lot of work, and the smarts to do it well.
           </p>
-          <p>Web-wise, I'm into a good font. I know HTML and CSS. I'm proficient in JavaScript and JQuery. I have coded with Python and I'm eager to try Python frameworks such as Djangjo / Flask. I'm interested in having contact with clients as I enjoy people!
+          <p>Web-wise, I'm into a good font. I know HTML / HTML5 and CSS / CSS3. I'm proficient in JavaScript and JQuery. I'm interested in having contact with clients as I enjoy people!
           </p>
           </a>
         </div>
@@ -38,26 +38,33 @@
           <h1 class="text-center" id="headline">Portfolio</h1>
           <p class="text-center">Built without templates</p>
           <div class="card_wrapper">
+            <div class="well site" id="">
+              <a href="../weather_app" target="_blank"><h5>Lone Pine Cafe</h5></a>
+              <div class="site_description">
+                <p class="small">Informational site for the Lone Pine Cafe, in Baker City, Oregon.</p>
+              </div>
+              <a href="../pine" target="_blank"><img src="img/lone_pine_mobile.png" class="site-card img-responsive"></a>
+            </div>
             <div class="well site" id="site_one">
               <a href="../weather_app" target="_blank"><h5>Weather App</h5></a>
               <div class="site_description">
                 <p class="small">Uses <a href="http://openweathermap.org/api">openweather</a> API to display current weather forecast.</p>
               </div>
-              <a href="../weather_app" target="_blank"><img src="weather_app_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../weather_app" target="_blank"><img src="img/weather_app_screenshot.png" class="site-card img-responsive"></a>
             </div>
             <div class="well site" id="site_two">
               <a href="../wiki_app" target="_blank"><h5>Wikipedia Viewer</h5></a>
               <div class="site_description">
                 <p class="small">Uses wiki media API to display wikipedia entries.</p>
               </div>
-              <a href="../wiki_app" target="_blank"><img src="wiki_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../wiki_app" target="_blank"><img src="img/wiki_screenshot.png" class="site-card img-responsive"></a>
             </div>
             <div class="well site" id="site_three">
               <a href="../prag_site" target="_blank"><h5>Pragmatics Materials</h5></a>
               <div class="site_description">
                 <p class="small">This is my MA TESOL project. Instructional materials for a theory of pragmatic politeness.</p>
               </div>
-              <a href="../prag_site"><img src="pragmatics_screenshot.png" class="site-card img-responsive"></a>
+              <a href="../prag_site"><img src="img/pragmatics_screenshot.png" class="site-card img-responsive"></a>
             </div>
           </div>
         </div>
@@ -72,14 +79,14 @@
               <div class="site_description">
                 <p class="small">A WordPress site built in 2013 for a construction company using a theme.</p>
               </div>
-              <a href="http://www.pcunw.com" target="_blank"><img src="pcunw_screenshot.png" class="site-card img-responsive"></a>
+              <a href="http://www.pcunw.com" target="_blank"><img src="img/pcunw_screenshot.png" class="site-card img-responsive"></a>
             </div>
             <div class="well site" id="site_five">
               <a href="http://www.tinshedgardencafe.com"><h5>Tin Shed Garden Cafe</h5></a>
               <div class="site_description">
-                <p class="small">A WordPress site built in 2014 for Portland restaurant. Converted a bootstrap theme to WordPress.</p>
+                <p class="small">A WordPress site built in 2014 for a Portland restaurant. Converted a bootstrap theme to WordPress.</p>
               </div>
-              <a href="www.tinshedgardencafe.com"><img src="tinshed_screenshot.png" class="site-card img-responsive"></a>
+              <a href="http://www.tinshedgardencafe.com" target="_blank"><img src="img/tinshed_screenshot.png" class="site-card img-responsive"></a>
             </div>
           </div>
         </div>
@@ -101,7 +108,7 @@
       "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
       "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
       "styles.css",
-      "https://fonts.googleapis.com/css?family=Alegreya+Sans"
+      "https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800"
     ];
     for (var i = 0; i < scripts_array.length; i++) {
       var resource = document.createElement('link');

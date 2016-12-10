@@ -44,6 +44,9 @@ h5 {
 #about_section p, a {
   font-size: 1.3em;
 }
+#extra_strong_text {
+  font-weight: 900;
+}
 .section-wrapper {
   height: 100%;
   width: 100%;
