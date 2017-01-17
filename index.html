@@ -38,28 +38,35 @@
           <h1 class="text-center" id="headline">Portfolio</h1>
           <p class="text-center">Built without templates</p>
           <div class="card_wrapper">
-            <div class="well site" id="">
-              <a href="../weather_app" target="_blank"><h5>Lone Pine Cafe</h5></a>
+            <div class="well site site_bg_light" id="">
+              <a href="../pomodoro" target="_blank"><h5>Pomodoro Timer</h5></a>
+              <div class="site_description">
+                <p class="small">Allows a user to set a Pomodoro timer for work / study sessions. User can adjust length of work session but not the break timer. ;)</p>
+              </div>
+              <a href="../pomodoro" target="_blank"><img src="img/pomodoro_screenshot.png" class="site-card img-responsive"></a>
+            </div>
+            <div class="well site site_bg_blue" id="">
+              <a href="../pine/index.html" target="_blank"><h5>Lone Pine Cafe</h5></a>
               <div class="site_description">
                 <p class="small">Informational site for the Lone Pine Cafe, in Baker City, Oregon.</p>
               </div>
-              <a href="../pine" target="_blank"><img src="img/lone_pine_desktop.png" class="site-card img-responsive"></a>
+              <a href="../pine/index.html" target="_blank"><img src="img/lone_pine_desktop-min.png" class="site-card img-responsive"></a>
             </div>
-            <div class="well site" id="site_one">
+            <div class="well site site_bg_light" id="">
               <a href="../weather_app" target="_blank"><h5>Weather App</h5></a>
               <div class="site_description">
-                <p class="small">Uses <a href="http://openweathermap.org/api">openweather</a> API to display current weather forecast.</p>
+                <p class="small">Uses <a href="http://openweathermap.org/api">openweather</a> API to display current weather forecast. Uses only <strong>vanilla JS.</strong> Takes advantage of <strong>ES6</strong> features.</p>
               </div>
               <a href="../weather_app" target="_blank"><img src="img/weather_app_screenshot.png" class="site-card img-responsive"></a>
             </div>
-            <div class="well site" id="site_two">
+            <div class="well site site_bg_blue" id="">
               <a href="../wiki_app" target="_blank"><h5>Wikipedia Viewer</h5></a>
               <div class="site_description">
                 <p class="small">Uses wiki media API to display wikipedia entries.</p>
               </div>
               <a href="../wiki_app" target="_blank"><img src="img/wiki_screenshot.png" class="site-card img-responsive"></a>
             </div>
-            <div class="well site" id="site_three">
+            <div class="well site site_bg_olive" id="">
               <a href="../prag_site" target="_blank"><h5>Pragmatics Materials</h5></a>
               <div class="site_description">
                 <p class="small">This is my MA TESOL project. Instructional materials for a theory of pragmatic politeness.</p>
@@ -104,18 +111,18 @@
   </div>
   <!--load all css and font scripts without blocking rendering-->
   <script>
-    var scripts_array = [
+    const scripts_array = [
       "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
       "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
       "styles.css",
       "https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800"
     ];
     for (var i = 0; i < scripts_array.length; i++) {
-      var resource = document.createElement('link');
+      const resource = document.createElement('link');
       resource.setAttribute("rel", "stylesheet");
       resource.setAttribute("href", scripts_array[i]);
       resource.setAttribute("type", "text/css");
-      var head = document.getElementsByTagName('head')[0];
+      const head = document.getElementsByTagName('head')[0];
       head.appendChild(resource);
     }
   </script>
